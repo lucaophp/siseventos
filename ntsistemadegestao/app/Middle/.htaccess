@@ -1,7 +1,0 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /eventos
-    RewriteCond %{REQUEST_FILENAME} !-f
-    
-    RewriteRule ^(.*)$ public/index.php?key=$1 [QSA,L]
-</IfModule>
