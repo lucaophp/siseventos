@@ -156,6 +156,7 @@ class Persistence{
         $listar=$connect->prepare($str);
         $listar->execute();
         
+        
         return $listar->fetchAll(PDO::FETCH_ASSOC);
     }
 }
