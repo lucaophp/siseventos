@@ -1,0 +1,75 @@
+<?php
+$cliente=$_SESSION['cliente'];
+?>
+<form class="form col-md-12 center-block" method="POST" action="user/alterar#">
+            <input type="hidden" name="id" id="id" value="<?php echo $cliente->id;?>">
+            <div class="form-group">
+              <input type="text" name="nome" class="form-control input-lg" placeholder="Nome" value="<?php echo $cliente->nome?>" required>
+            </div>
+            <div class="form-group">
+              <label style="width:100%">Você é:
+                <select class="form-control input-lg" name="tipo" id="tipo" onblur="verificaAluno()" value="">
+                  <option value="aluno">Aluno</option>
+                  <option value= "Professor">Professor</option>
+                  <option value="faculdade">De outra faculdade</option>
+                  <option value="outros">Outros</option>
+
+                </select>
+              </label>
+            </div>
+            <div class="form-group">
+              <input type="number" name="matricula" id="matricula" class="form-control input-lg" placeholder="Matricula" style="display:block" value="<?php echo $cliente->matricula;?>">
+            </div>
+            <div class="form-group">
+              <input type="number" name="cpf" id="cpf" onblur="validaCPF()" class="form-control input-lg" placeholder="CPF" value="<?php echo $cliente->cpf?>" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="data_nascimento" id="data_nascimento" class="form-control input-lg" placeholder="Data de nascimento: no formato(dd/mm/aaaa)" value="<?php echo $cliente->data_nascimento->format("d/m/Y") ?>" required onblur="validaData()">
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control input-lg" placeholder="Email" value="<?php echo $cliente->email?>" required>
+            </div>
+            <div class="form-group">
+              <select class="form-control input-lg" id="alterarSenha" name="alterarSenha" onchange ="mudaSenha();">
+                <option value="0">Não desejo alterar senha</option>
+                <option value="1">Sim, desejo alterar senha</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="password" name="pass" id="senha1" class="form-control input-lg" placeholder="Senha (Digite somente se quiser altera-la)" disabled="true">
+            </div>
+            <div class="form-group">
+              <input type="password" name="passConfirm" id="senha2" onblur="verificaSenhas()" class="form-control input-lg" placeholder="Digite novamente a senha" disabled="true">
+            </div>
+            
+            <div class="form-group">
+              <iframe src="../valida.php?l=150&amp;a=50&amp;tf=20&amp;ql=5" name="letras" scrolling="no" style="border:0px;width:200px;height:60px;">
+              </iframe>
+              <a href="../valida.php?l=150&amp;a=50&amp;tf=20&amp;ql=5" target="letras">Outra imagem</a>
+            </div>
+
+            
+            <div class="form-group">
+              <input type="text" name="valida" class="form-control input-lg" placeholder="Digite o codigo de segurança">
+            </div>
+            
+            <div class="form-group">
+              <button class="btn btn-primary btn-lg btn-block" type="submit" id="enviar" name="atualizar">Atualizar</button>
+              <!--<span class="pull-right"><a href="inicio/">Login</a></span><span><a href="#">Need help?</a></span>-->
+              
+            </div>
+          </form>
+          <script src="../js/inscrevase/main.js">
+          </script>
+          <script>
+            function mudaSenha(){
+              if(document.getElementById("alterarSenha").value==1){
+                document.getElementById("senha1").disabled=false;
+                document.getElementById("senha2").disabled=false;
+              }else{
+                document.getElementById("senha1").disabled=true;
+                document.getElementById("senha2").disabled=true;
+
+              }
+            }
+          </script>

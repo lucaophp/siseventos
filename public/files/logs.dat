@@ -1,0 +1,32 @@
+-------------------------------------------------------------------
+Data/Hora do servidor: 2014-06-07 20:06:45
+Evento com erro: infoalto
+Detalhe do erro:
+ SQLSTATE[42000] [1049] Unknown database 'eventox'
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+Data/Hora do servidor: 2014-06-07 20:07:36
+Evento com erro: infoalto
+Detalhe do erro:
+ SQLSTATE[42000] [1049] Unknown database 'eventox'
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+Data/Hora do servidor: 2014-06-07 20:09:41
+Evento com erro: infoalto
+Detalhe do erro:
+ SQLSTATE[42000] [1049] Unknown database 'eventox'
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+Data/Hora do servidor: 2014-06-07 20:15:06
+Evento com erro: infoalto
+Pagina com erro: /var/www/new/model/log.php
+Detalhe do erro:
+ SQLSTATE[42000] [1049] Unknown database 'eventox'
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+Data/Hora do servidor: 2014-06-07 20:20:24
+Evento com erro: infoalto
+Pagina com erro: /var/www/new/model/log.php
+Detalhe do erro:
+ SQLSTATE[42000] [1049] Unknown database 'eventox'
+-------------------------------------------------------------------

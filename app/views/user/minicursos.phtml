@@ -1,0 +1,57 @@
+<h1>Minicursos em que estou inscrito OU na fila</h1>
+<table class='table table-striped custab'>
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Ministrante</th>
+        <th>Data/Hora Inicio</th>
+        <th>Data/Hora Fim</th>
+        
+    </tr>
+    <?php foreach($_SESSION['minicurso'] as $inscrito):?>
+    <?php   $m=$inscrito->minicursos;?>
+    <tr>
+        <td><?php echo $m->id;?></td>
+        <td><?php echo $m->nome;?></td>
+        <td><?php echo $m->ministrante;?></td>
+        <td><?php echo $m->data_hora_inicio->format("d/m/Y G:i");?></td>
+        <td><?php echo $m->data_hora_fim->format("d/m/Y G:i");?></td>
+        <td><?php echo $inscrito->tipo==0?"Está na Fila":"Inscrito";?></td>
+        <td><a href="user/minicursos/desistir/<?php echo $inscrito->id;?>">Desistir</a></td>
+        
+    </tr>
+    <?php endforeach; ?>
+    <?php unset($_SESSION['minicurso'])?>
+    
+    
+</table>
+<h1>Outros Minicursos</h1>
+<table class='table table-striped custab'>
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Ministrante</th>
+        <th>Vagas</th>
+        <th>Data/Hora Inicio</th>
+        <th>Data/Hora Fim</th>
+    </tr>
+    <?php foreach($_SESSION['minicurso2'] as $m):?>
+    <tr>
+        <td><?php echo $m->id;?></td>
+        <td><?php echo $m->nome;?></td>
+        <td><?php echo $m->ministrante;?></td>
+        <td><?php echo ($m->vagas-$m->vagas_preenchidas);?></td>
+        <td><?php echo $m->data_hora_inicio->format("d/m/Y G:i");?></td>
+        <td><?php echo $m->data_hora_fim->format("d/m/Y G:i");?></td>
+        <?php if(($m->vagas-$m->vagas_preenchidas)==0): ?>
+            <td><a href="user/minicursos/add/<?php echo $m->id;?>">Entrar Na Fila</a></td>
+        <?php else:?>
+            <td><a href="user/minicursos/add/<?php echo $m->id;?>">Inscrever</a></td>
+        <?php endif;?>
+        
+    </tr>
+    <?php endforeach; ?>
+    <?php unset($_SESSION['minicurso2'])?>
+    
+    
+</table>

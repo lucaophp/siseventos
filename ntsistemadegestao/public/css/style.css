@@ -1,0 +1,329 @@
+﻿/*Conteudo basico*/
+* { 
+	margin:0px; 
+	padding:0px;
+}
+
+body{
+	background-image:url(../images/bg.png);
+	background-repeat:repeat-x;
+	background-color: #F5F5F5;
+}
+a{
+	text-decoration:none;
+	color: #005B9C;
+}
+
+/*Inicio da id topo*/
+#topo{
+	height: 250px;
+	width: 100%;
+}
+#topo-central{
+	width: 950px;
+	margin: -40px auto;
+}
+
+/*Inicio das id logo*/
+#logo{
+	width: 610px;
+	height: 60px;
+	margin: 0px;
+	padding: 80px 0px 0px 0px;
+}
+
+.logosistema {
+	width: 200px; 
+}
+
+.logoempresa {
+	max-width: 250px; 
+	max-height: 100px;
+}
+
+.imgPerfil {
+	max-width: 160px;
+	max-height: 160px;
+}
+
+/*Inicio das id Utilidade*/
+#utilidade {
+	float: left;
+	width: 302px;
+	height: 10px;
+	padding: 40px 0px 0px 650px;
+	font-family:Arial;
+    color: #005B9C;
+	display: inline;
+	font-style: inherit;
+}
+#utilidade a {
+	font-family: Arial;
+	font-size: 14px;
+    color: #005B9C;
+	display: inline;
+	font-style: inherit;
+	text-decoration: none;
+}
+
+/*--------------------Inicio menu principal-------------------------------*/
+#menu{   
+   	width: 950px;
+   	height: 86px;
+   	margin: 0px auto;
+   	padding: 51px 0px 0px 50px;
+   	text-align: left;
+   	font-size: 16px;
+   	font-family: Arial;
+   	color: #005B9C;
+   	text-align: right;
+}
+
+#menu ul {
+   	padding: 0px;
+   	-moz-padding-start: 10px;
+   	margin: 0px;
+   	float: left;
+   	list-style: none;
+   	width: 950px;   
+}
+
+#menu ul li{
+   	display: inline;
+}
+
+#menu ul li a{
+   	float: left;
+   	margin: 0px;
+   	padding: 27px 25px 15px 25px;
+   	text-decoration: none;
+   	color: #005B9C;   
+}
+
+#menu ul li a:hover{
+	font-style:inherit;	
+	border-bottom:3px #005B9C solid;	
+}
+
+#menu ul li a.active {
+	border-bottom:3px #005B9C solid;
+	font-weight: bold;
+}
+
+/*Fim das id menu*/
+
+/*--------------------Menu Lateral - Inicio-------------------------------*/
+#leftbar{
+   width:234x;
+   margin: 0px auto;
+   padding: 40px 0px 0px 0px;
+   font-size: 16px;
+   font-family: Arial;
+   color: #005B9C;
+}
+
+#leftbar ul{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+#leftbar ul li{
+   display: list-item;
+}
+
+#leftbar ul li ul {
+	margin: 0px 0px 0px 25px;
+}
+
+#leftbar ul li ul li{
+	font-size: 14px;
+}
+
+#leftbar ul li a {
+	float: left;
+	margin: 0px;
+	padding: 10px;
+	width: 220px;
+	text-decoration: none;
+	color: #005B9C;
+}
+
+#leftbar ul li a:hover {
+	border-left: 2px #005B9C solid;
+}
+
+#leftbar ul li a.active {
+	font-style:italic;
+	border-left: 2px #005B9C solid;
+}
+
+/*--------------------Fim do Menu Lateral-------------------------------*/
+
+/*--------------------Menu Lateral - Inicio-------------------------------*/
+#leftbar-plane{
+   width:234x;
+   margin:0 auto;
+   padding:20px 0px 0px 0px;
+   text-align:left;
+   font-size:13px;
+   font-family:Arial;
+   color:#005B9C;
+}
+
+#leftbar-plane ul{
+   padding:0px;
+   margin:0px;
+   float:left;
+   list-style:none;
+}
+#leftbar-plane ul li{
+   display:list-item;
+}
+
+#leftbar-plane ul li a{
+   float:left;
+   margin:0px 0px 0px 5px;
+   padding:10px;
+   text-decoration:none;
+   color:#005B9C;
+}
+
+#leftbar-plane ul li a:hover {
+	border-left: 2px #005B9C solid;
+}
+
+#leftbar-plane ul li a.active {
+	font-style:italic;
+	border-left: 2px #005B9C solid;
+}
+
+/*--------------------Fim do Menu Lateral-------------------------------*/
+
+/*--------------------Box-------------------------------*/
+#boxtudo{
+	width:950px;
+	min-height:400px;
+	margin:0px auto;	
+	background-color: #fff;
+	border: 1px;
+	border-radius: 10px;
+}
+/*Box com a borda toda*/
+#boxborda_nivel{
+	width:950px;
+	min-height:200px;
+	margin:0px auto;
+	border-width: 0px;
+	border-radius: 10px;
+	border-style:inset;
+	border-color:#005A9B;	
+	background-color: #fff;
+}
+/*Box tudo esquerdo*/
+#box1{
+	float:left;
+	width:22%;
+	min-height:420px;
+	margin:0px auto;
+	border-width: 0px;
+	border-style:inset;
+	border-color:#005A9B;
+}
+/*Box tudo direito*/
+#box2{
+	padding:0px 0px 1px 10px;
+	width:750px;
+	min-height:435px;
+	margin:-18px 0px 0px 220px;
+	border-width: 0px;
+	border-style:inset;
+	border-color:#005A9B;
+}
+
+/*Colocar nos links das tabelas*/
+#boxborda_nivel a{
+	font-family:Arial;
+	font-size:14px;
+    color:#005B9C;
+	display:inline;
+	font-style:inherit;
+	text-decoration:none;
+}
+
+
+
+
+#conteudo-box2{
+	margin:30px 50px;
+}
+
+#conteudo-box2 a{
+	font-family:Arial;
+	font-size:14px;
+    color:#005B9C;
+	display:inline;
+	font-style:inherit;
+	text-decoration:none;
+}
+
+
+/*--------------------Inicio das div rodapé-------------------------------*/
+#rodape {
+	width: 100%;
+	height: 80px;
+	background-color:#111111;
+}
+
+#rodape-central {
+	width:900px;
+	margin:0px auto;
+}
+
+#rodape-texto {
+	color: #FFF;
+	font-size:16px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 30px 0px 0px 0px;
+	margin: 0px auto;
+	float: left;
+}
+
+#rodape-infoalto {
+	float: right;
+}
+
+.rodape-infoalto-img {
+	width: 100px;
+	padding-top: 15px;
+}
+
+/*Configuração da tabela na página de cadastro*/
+.table-title {
+	background-color:#006699 ;
+	height:50px;
+}
+
+.table-linePar {
+	background-color: #AACCD2;
+	height:30px;
+}
+
+.table-lineImpar {
+	background-color: #DAE9EB;
+	height:30px;
+}
+
+#mapa-estrategico{
+	min-width:195px;
+	min-height:226px;
+	margin: 0  0 0 10px;;
+	border:2px solid #005BB4;
+}
+
+/*Tabelas e contudos no planejamento estrategico em tabelas*/
+.tb-estrategico{
+	width:100%;
+	background-image:url(../images/tb.png) ;
+	background-repeat:repeat;
+	border:solid #006699;
+}

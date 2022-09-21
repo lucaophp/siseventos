@@ -1,0 +1,52 @@
+          <form class="form col-md-12 center-block" method="POST" action="inicio/inscrevase#">
+            <div class="form-group">
+              <input type="text" name="nome" class="form-control input-lg" placeholder="Nome" required>
+            </div>
+            <div class="form-group">
+              <label style="width:100%">Você é:
+                <select class="form-control input-lg" name="tipo" id="tipo" onblur="verificaAluno()">
+                  <option value="aluno">Aluno</option>
+                  <option value= "Professor">Professor</option>
+                  <option value="faculdade">De outra faculdade</option>
+                  <option value="outros">Outros</option>
+
+                </select>
+              </label>
+            </div>
+            <div class="form-group">
+              <input type="number" name="matricula" id="matricula" class="form-control input-lg" placeholder="Matricula" style="display:block">
+            </div>
+            <div class="form-group">
+              <input type="number" name="cpf" id="cpf" onblur="validaCPF()" class="form-control input-lg" placeholder="CPF" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="data_nascimento" id="data_nascimento" class="form-control input-lg" placeholder="Data de nascimento: no formato(dd/mm/aaaa)" required onblur="validaData()">
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control input-lg" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="password" name="pass" id="senha1" class="form-control input-lg" placeholder="Senha" required>
+            </div>
+            <div class="form-group">
+              <input type="password" name="passConfirm" id="senha2" onblur="verificaSenhas()" class="form-control input-lg" placeholder="Digite novamente a senha" required>
+            </div>
+            
+            <div class="form-group">
+              <iframe src="../valida.php?l=150&amp;a=50&amp;tf=20&amp;ql=5" name="letras" scrolling="no" style="border:0px;width:200px;height:60px;">
+              </iframe>
+              <a href="../valida.php?l=150&amp;a=50&amp;tf=20&amp;ql=5" target="letras">Outra imagem</a>
+            </div>
+
+            
+            <div class="form-group">
+              <input type="text" name="valida" class="form-control input-lg" placeholder="Digite o codigo de segurança">
+            </div>
+            
+            <div class="form-group">
+              <button class="btn btn-primary btn-lg btn-block" type="submit" id="enviar" name="inscrever">Inscrever</button>
+              <span class="pull-right"><a href="inicio/">Login</a></span><span><a href="#">Need help?</a></span>
+              
+            </div>
+          </form>
+          <script src="../js/inscrevase/main.js"></script>

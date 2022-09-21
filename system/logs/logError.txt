@@ -1,0 +1,80 @@
+============================================
+Codigo do erro: 0
+============================================
+Codigo do erro: 0
+Data hora do Erro: 18/02/2015 16:52:08
+DescriÃ§Ã£o: exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Este host não é conhecido. ' in C:\wamp\www\eventos\lib\MySql\Persistence.module.php:11
+Stack trace:
+#0 C:\wamp\www\eventos\lib\MySql\Persistence.module.php(11): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\wamp\www\eventos\system\MainConfig.php(48): Persistence::start()
+#2 C:\wamp\www\eventos\public\index.php(19): MainConfig::main(Array)
+#3 {main}
+============================================
+============================================
+Codigo do erro: 0
+Data hora do Erro: 18/02/2015 16:56:16
+Na pagina: 
+DescriÃ§Ã£o: exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Este host não é conhecido. ' in C:\wamp\www\eventos\lib\MySql\Persistence.module.php:11
+Stack trace:
+#0 C:\wamp\www\eventos\lib\MySql\Persistence.module.php(11): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\wamp\www\eventos\system\MainConfig.php(48): Persistence::start()
+#2 C:\wamp\www\eventos\public\index.php(19): MainConfig::main(Array)
+#3 {main}
+============================================
+============================================
+Codigo do erro: 0
+Data hora do Erro: 18/02/2015 16:56:36
+Na pagina: /eventos/public/index.php
+DescriÃ§Ã£o: exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Este host não é conhecido. ' in C:\wamp\www\eventos\lib\MySql\Persistence.module.php:11
+Stack trace:
+#0 C:\wamp\www\eventos\lib\MySql\Persistence.module.php(11): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\wamp\www\eventos\system\MainConfig.php(48): Persistence::start()
+#2 C:\wamp\www\eventos\public\index.php(19): MainConfig::main(Array)
+#3 {main}
+============================================
+============================================
+Codigo do erro: 0
+Data hora do Erro: 18/02/2015 16:58:24
+Na pagina: sacsis/user/maratona
+DescriÃ§Ã£o: exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Este host não é conhecido. ' in C:\wamp\www\eventos\lib\MySql\Persistence.module.php:11
+Stack trace:
+#0 C:\wamp\www\eventos\lib\MySql\Persistence.module.php(11): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\wamp\www\eventos\system\MainConfig.php(48): Persistence::start()
+#2 C:\wamp\www\eventos\public\index.php(19): MainConfig::main(Array)
+#3 {main}
+============================================
+============================================
+Codigo do erro: 0
+Data hora do Erro: 18/02/2015 17:02:57
+Na pagina: sacsis/user/minicursos
+DescriÃ§Ã£o:
+ Undefined property: InscritoMinicurso->minicursos in C:\wamp\www\eventos\lib\ActiveRecord\lib\Model.php on line 524
+============================================
+============================================
+Codigo do erro: 42
+Data hora do Erro: 19/02/2015 14:25:33
+Na pagina: sacsis/user/minicursos
+Descricao:
+ 42S22, 1054, Unknown column 'status' in 'where clause'
+============================================
+============================================
+Codigo do erro: 42
+Data hora do Erro: 19/02/2015 14:25:43
+Na pagina: sacsis/user/minicursos
+Descricao:
+ 42S22, 1054, Unknown column 'status' in 'where clause'
+============================================
+============================================
+Codigo do erro: 42
+Data hora do Erro: 19/02/2015 14:25:44
+Na pagina: sacsis/user/minicursos
+Descricao:
+ 42S22, 1054, Unknown column 'status' in 'where clause'
+============================================
+============================================
+Codigo do erro: 0
+Data hora do Erro: 19/02/2015 16:26:43
+Na pagina: sacsis/user/minicursos/add/2
+Descricao:
+ Undefined property: Evento->max_minicursos in C:\wamp\www\eventos\lib\ActiveRecord\lib\Model.php on line 524
+============================================

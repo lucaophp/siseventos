@@ -1,0 +1,96 @@
+/*-----------------------Formularios--------------------------------*/
+/*Classe para Estrura*/
+.botoes{
+	padding:3px;
+	border:2px solid #069;
+	background-color:#FFF;
+	font:15px Arial, Helvetica, sans-serif;
+	color:#069;
+	width:196px;
+	height:52px;
+	display:inline;
+	margin:5px 50px;
+}
+.botoes-salvar{
+	padding:3px;
+	border:2px solid #069;
+	background-color:#FFF;
+	font:15px Arial, Helvetica, sans-serif;
+	color:#069;
+	min-width:150px;
+	height:40px;
+	display:inline;
+	margin:5px 25px;
+}
+
+/*Cadastro*/
+
+.intup{
+	border:2px solid #069;
+	background-color:#FFF;
+	font:12px Arial, Helvetica, sans-serif;
+	padding: 0px 5px 0px 5px;
+	color:#069;
+	width:200px;
+	height:25px;
+	display:inline;
+	margin:5px 0px;
+}
+.intup1{
+	border:2px solid #069;
+	background-color:#FFF;
+	font:12px Arial, Helvetica, sans-serif;
+	padding: 0px 5px 0px 5px;
+	color:#069;
+	width:150px;
+	height:25px;
+	display:inline;
+	margin:5px 0px;
+}
+.text{
+	border:2px solid #069;
+	background-color:#FFF;
+	font:12px Arial, Helvetica, sans-serif;
+	padding: 0px 5px 0px 5px;
+	color:#069;
+	width:150px;
+	height:50px;
+	display:inline;
+	margin:5px 0px;
+}
+
+
+.intup:disabled {
+	background-color: #ddd;
+}
+
+.textarea{
+	height: 90px;
+	border:2px solid #069;
+	padding: 5px;
+	background-color:#FFF;
+	font:12px Arial, Helvetica, sans-serif;
+	color:#069;
+	
+}
+
+.det{
+	border:2px solid #069;
+	background-color:#FFF;
+	font:12px Arial, Helvetica, sans-serif;
+	color: #069;
+	width: 184px;
+	height:35px;
+	display:inline;
+	
+}
+
+.form-error {
+	border:2px solid #f00;
+	background: url('../images/x.png') no-repeat right;
+}
+
+.form-valid {
+	border: 2px solid #6a6;
+	background:url('../images/v.png') no-repeat right;
+}
