@@ -61,10 +61,6 @@ class MainConfig{
             
         }
 		new Router($url,$param);
-		//}
-		//self::$_dbname=;
-		
-		
 	}
 	
 	
