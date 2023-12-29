@@ -15,8 +15,6 @@ class EventRouter{
 				exit();
 			}
 			self::$data=($_SESSION["event"]);
-
-
 		}
 
 	}

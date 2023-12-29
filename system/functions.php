@@ -1,5 +1,4 @@
 <?php
-//function import($name);
 import("system/Log.php");
 ini_set('display_errors',1);
 ini_set('display_startup_erros',1);
@@ -7,7 +6,6 @@ error_reporting(E_ALL);
 register_shutdown_function( "fatal_handler" );
 
 function fatal_handler() {
-    //echo $errstr;
     $error = error_get_last();
     
     if( $error !== NULL) {
@@ -41,13 +39,11 @@ function import($name) {
 }
 
 function __autoload($classe) {
-    //import("MySql.Persistence");
     if (file_exists("../app/Models/{$classe}.php")) {
         import("app/Models/{$classe}.php");
     } else if (file_exists("../app/Controllers/{$classe}.php")) {
         import("app/Controllers/{$classe}.php");
     } else if (file_exists("../app/Persistence/{$classe}.php")) {
-        //import("MySql.Persistence");
         import("app/Persistence/{$classe}.php");
     } else if (file_exists("../system/{$classe}.php")) {
         import("system/{$classe}.php");
@@ -61,23 +57,9 @@ function __autoload($classe) {
     }
 }
 
-function xmlTeste() {
-    echo "<meta charset=\"utf8\">";
-
-
-    $xml = simplexml_load_file("http://g1.globo.com/dynamo/rss2.xml");
-
-
-    foreach ($xml->channel[0]->item as $value) {
-        echo "<a href=\"" . $value->link . "\">";
-        echo $value->title . "</a><br>";
-    }
-}
-
 function selectMime() {
     if (!is_dir($_GET['key'])) {
         if (file_exists($_GET["key"])) {
-            //file_get_contents($_GET["key"]);
             $ext = pathinfo($_GET['key'], PATHINFO_EXTENSION);
             $ext = strtolower($ext);
             if ($ext == "php" && $_GET['key'] == "index.php") {
@@ -161,7 +143,6 @@ function selectMime() {
             }
 
                 
-            //file_put_contents($filename, $data);
         }
     }
 }

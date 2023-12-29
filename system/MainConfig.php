@@ -11,9 +11,7 @@ class MainConfig{
 	static $_passDb;
 	static $_serverDb;
 	
-	public function __construct(){
-		
-	}
+	public function __construct(){}
 	public static function defaultValues($val){
 		if($val=='dbname')
 			return "event";
@@ -32,12 +30,9 @@ class MainConfig{
 			return "";
 		if($val=='serverDb')
 			return "localhost";
-		return null;
-		
-		
+		return null;	
 	}
 	public static function main($args=null){
-		//if(is_array($args)){
 		self::$_serverDb=isset($args['serverDb'])? $args['serverDb'] : self::defaultValues('serverDb');
 		self::$_dbname=isset($args['dbname'])? $args['dbname'] : self::defaultValues('dbname');
 		self::$_dir=isset($args['dir'])? $args['dir'] : self::defaultValues('dir');

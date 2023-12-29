@@ -6,8 +6,6 @@ class Log{
     private function __construct($e){
         $this->error=$e;
         $this->datahora=date("d/m/Y G:i:s");
-        
-    
     }
     public function neoWarning(){
         if(!file_exists("../system/logs/logW.txt")){
@@ -46,12 +44,8 @@ class Log{
         fprintf($fp,"Descricao:\n %s\n",$this->error->getMessage());
         fprintf($fp,"============================================\n");
         fclose($fp);
-        
-        
-        
     }
     public static function getInstance($tipo,$e){
-        //if(self::$instance==null)
         self::$instance=new Log($e);
         if($tipo=="ERROR"){
             self::$instance->neoError();
@@ -62,11 +56,6 @@ class Log{
             self::$instance->neoAccess();
             
         }
-        
-        
-        
-        return self::$instance;
-            
-        
+        return self::$instance; 
     }
 }
