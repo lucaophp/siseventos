@@ -12,25 +12,21 @@ class MainConfig{
 	static $_serverDb;
 	
 	public function __construct(){}
-	public static function defaultValues($val){
-		if($val=='dbname')
-			return "event";
-		if($val=='dir')
-			return "eventos";
-		if($val=='url'){
-			if(!isset($_GET['key'])){
-				return array();
-
-			}
-			return $_GET['key'].'/';
-		}
-		if($val=='userDb')
-			return "root";
-		if($val=='passDb')
-			return "";
-		if($val=='serverDb')
-			return "localhost";
-		return null;	
+	public static function defaultValues($key){
+		$values = [
+			'dbname' => 'event',
+			'dir' => 'eventos',
+			'url' => (function() {
+				if(!isset($_GET['key'])){
+					return array();
+				}
+				return $_GET['key'].'/';
+			})(),
+			'userDb' => 'root',
+			'passDb' => '',
+			'serverDb' => 'localhost'
+		];
+		return isset($values[$key]) ? $values[$key] : null;	
 	}
 	public static function main($args=null){
 		self::$_serverDb=isset($args['serverDb'])? $args['serverDb'] : self::defaultValues('serverDb');
