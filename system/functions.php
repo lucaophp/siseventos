@@ -38,7 +38,7 @@ function import($name) {
     }
 }
 
-function __autoload($classe) {
+function autoload($classe) {
     if (file_exists("../app/Models/{$classe}.php")) {
         import("app/Models/{$classe}.php");
     } else if (file_exists("../app/Controllers/{$classe}.php")) {
@@ -56,6 +56,7 @@ function __autoload($classe) {
         die();
     }
 }
+spl_autoload_register('autoload');
 
 function selectMime() {
     if (!is_dir($_GET['key'])) {
